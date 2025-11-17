@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> <!-- pozwala na uruchamianie skryptów na stronie
+        pochodzących tylko z tej domeny -->
+    <title> 16.11.2025 </title>
+</head>
+<body>
+    <img src="./source/jsPic.png" alt="js pic" loading="lazy"> <!-- lazy loading odpowiada za renderowanie zdjęcia dopiero wtedy, gdy
+        użytkownik zjedzie w miejsce, gdzie znajduje się to zdjęcie. Zaopobiega to wolnemu działaniu na początku renderowania strony.
+        Domyślny loading eager mówi, że po wejściu na stronę wszystkie zdjęcia zostaną załadowane. -->
+    <img src="./source/jsPic.png" alt="js pic" decoding="async"> <!-- decoding mówi o tym, kiedy przeglądarka ma przetworzyć obraz,  
+        async oznacza, że zdjecie zostanie zdekodowane w wolnej chwili, sync - zdjęcie zostanie zdekodowane natychmiast. -->
+    <hr>
+    <figure> <!-- znacznika figure używamy wtedy, gdy chcemy umieścic na stronie zdjecie wraz z podpisem np. zdjecie produktowe -->
+        <img src="./source/jsPic.png" alt="js pic">
+        <figcaption> Logo JavaScript </figcaption>
+    </figure>
+    <img src="./source/jsPic.png" alt="js pic" fetchpriority="high"> <!-- atrybut fetchpriority mówi przeglądarce jak ważny jest zasób,
+        mówi jej "pobierz to szybciej / później, bo ma większe lub mniejsze znaczenia dla użytkownika" --> 
+    <hr>
+</body>
+</html>
